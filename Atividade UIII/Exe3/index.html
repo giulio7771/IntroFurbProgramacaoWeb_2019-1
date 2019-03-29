@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="index.css"/>
+    </head>
+    <body>
+        <nav>
+            <ul class="menu">
+                <li>
+                        <a href="#">Institucional</a>                    
+                    <ul class="submenu">
+                        <li><a href="#">Localização</a></li>
+                        <li><a href="#">Estrutura</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Produtos</a>
+                    <ul class="submenu">
+                        <li><a href="#">Notebooks</a></li>
+                        <li><a href="#">Celulares</a></li>
+                        <li><a href="#">Eletrodomésticos</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Sobre</a>
+                    <ul class="submenu">
+                        <li>
+                            <a href="#">Contato</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        <header>
+                <h1>Excercício 3</h1>
+            </header>
+        <section>
+            <div id="list" style="margin-left: auto; margin-right: auto;">
+                <h2 style="font-size: 20pt; color:black; font-weight: bold;">Fruit List</h2>
+                <ul>
+
+                </ul>
+            </div>
+        </section>
+        <footer>
+
+        </footer>
+    </body>
+    <script src="index.js"></script>
+    <style>
+        #list{
+            font-family: Arial;
+            font-size: 16pt;
+            color: blue;
+        }
+    </style>
+    <script>
+        var unsignedList = document.querySelector('div#list ul');
+        
+        var vector = ["banana", "maça", "laranja", "nectarina"];
+        for(let fruit of vector){
+            console.log(fruit);
+            var listItem = document.createElement('li');
+            var listText = document.createTextNode(fruit);
+            listItem.appendChild(listText);
+            unsignedList.appendChild(listItem);
+        }
+    </script>
+</html>
